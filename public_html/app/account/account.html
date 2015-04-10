@@ -1,0 +1,98 @@
+<h2>Account</h2>
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-default pull-right" ng-click="logout()">Log Out</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <form>
+      <div class="form-group">
+        <input id="latitude" class="form-control" type="text" placeholder="latitude" ng-model="latitude"/>
+        <input id="longitude" class="form-control" type="text" placeholder="longitude" ng-model="longitude"/>
+      </div>
+    </form>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-md-12">
+    <h4 id="current"></h4>
+
+    <div class="col-md-6">
+      <div id="map_canvas" style="height: 300px"></div>
+    </div>
+    <div class="col-md-6">
+      <div id="map_history_canvas" style="height: 300px"></div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3>Update test</h3>
+
+    <form>
+      <div class="form-group">
+        <label for="user-name">Name</label>
+        <input id="updatevalue" class="form-control" type="text" placeholder="Update value" ng-model="pdvalue"/>
+      </div>
+    </form>
+    <button class="btn btn-default" ng-click="updatevalue()">updatetest</button>
+  </div>
+  <div class="col-md-4">
+    <h3>Settings</h3>
+
+    <form>
+      <div class="form-group">
+        <label for="user-name">Name</label>
+        <input id="user-name" class="form-control" type="text" placeholder="Name" ng-model="profile.name"/>
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <input ng-model="profile.status" type="text" class="form-control" id="status" placeholder="Status">
+      </div>
+      <div class="form-group">
+        <label for="email-address">e-mail address</label>
+        <input id="email-address" class="form-control" type="text" placeholder="E-mail address" ng-model="profile.email" disabled/>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-4">
+    <h3>Change password</h3>
+
+    <form>
+      <div class="form-group">
+        <label for="old-password">Old password</label>
+        <input id="old-password" class="form-control" type="text" placeholder="Old password" ng-model="oldPassword"/>
+      </div>
+      <div class="form-group">
+        <label for="new-password">New password</label>
+        <input id="new-password" class="form-control" type="text" placeholder="New password" ng-model="newPassword"/>
+      </div>
+      <div class="form-group">
+        <label for="new-password">Confirm new password</label>
+        <input id="confirm-new-password" class="form-control" type="text" placeholder="Confirm new password" ng-model="confirmPassword"/>
+      </div>
+      <button ng-click="changePassword(oldPassword, newPassword, confirmPassword)" class="btn btn-default">Change password</button>
+      <p class="error margin-top-10" ng-show="changePasswordError">{{changePasswordError}}</p>
+
+      <p class="good" ng-show="changePasswordMsg">{{changePasswordMsg}}</p>
+    </form>
+  </div>
+  <div class="col-md-4">
+    <h3>Change e-mail address</h3>
+
+    <form>
+      <div class="form-group">
+        <label for="new-email">New e-mail address</label>
+        <input id="new-email" class="form-control" type="text" placeholder="New e-mail address" ng-model="newEmailAddress"/>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" class="form-control" type="text" placeholder="Password" ng-model="password"/>
+      </div>
+      <button ng-click="changeEmailAddress(newEmailAddress, password)" class="btn btn-default">Change e-mail address</button>
+      <p class="error margin-top-10" ng-show="changeEmailAddressError">{{changeEmailAddressError}}</p>
+
+      <p class="good" ng-show="changeEmailAddressMsg">{{changeEmailAddressMsg}}</p>
+    </form>
+  </div>
+</div>

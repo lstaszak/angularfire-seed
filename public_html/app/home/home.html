@@ -1,0 +1,11 @@
+<h2>Home</h2>
+<p class="status good" ng-show="loggedIn">Hello! You are logged in with id {{user.uid}}.</p>
+<form>
+  <div class="form-group">
+    <label for="synced-value">Synced value</label>
+    <input ng-model="syncedValue.$value" ng-change="syncedValue.$save()" id="synced-value" class="form-control" type="text"/>
+
+    <p><a ng-href="{{FBURL}}/syncedValue" target="_blank">Firebase</a> / <a target="_blank" href="#/">new window</a></p>
+  </div>
+</form>
+
