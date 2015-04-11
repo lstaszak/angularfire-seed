@@ -27,6 +27,12 @@
   </style>
 </head>
 <body ng-cloak onload="">
+<a ui-sref="home">home</a>
+<a ui-sref="contact">contact</a>
+
+<div ui-view></div>
+<div ui-view="home"></div>
+<div ui-view="contact"></div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -79,6 +85,7 @@
 -->
 <script src="assets/bower_components/angular/angular.js"></script>
 <script src="assets/bower_components/angular-route/angular-route.js"></script>
+<script src="assets/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="assets/bower_components/firebase/firebase.js"></script>
 <script src="assets/bower_components/angularfire/dist/angularfire.js"></script>
 <script src="app/app.js"></script>

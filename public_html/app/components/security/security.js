@@ -3,7 +3,7 @@
   var securedRoutes = [];
   var app = angular.module('myApp.security', ['ngRoute', 'firebase.auth', 'myApp.config']);
   app.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.otherwise({redirectTo: '/home'});
+    //$routeProvider.otherwise({redirectTo: '/login'});
   }]);
   app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.whenAuthenticated = function (path, route) {
@@ -20,6 +20,7 @@
     Auth.$onAuth(check);
     $rootScope.$on("$routeChangeError", function (e, next, prev, err) {
       if (err === "AUTH_REQUIRED") {
+        console.log(err);
         $location.path(loginRedirectPath);
       }
     });
