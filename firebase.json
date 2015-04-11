@@ -2,8 +2,6 @@
   "firebase": "INSTANCE",
   "public": "app",
   "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
+    "firebase.json", "**/.*", "**/node_modules/**"
   ]
 }

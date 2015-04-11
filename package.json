@@ -7,12 +7,12 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "karma": "~0.10",
-    "protractor": "~0.20.1",
-    "http-server": "^0.6.1",
-    "bower": "^1.3.1",
-    "shelljs": "^0.2.6",
-    "karma-junit-reporter": "^0.2.2"
+    "karma": "latest",
+    "protractor": "latest",
+    "http-server": "latest",
+    "bower": "latest",
+    "shelljs": "latest",
+    "karma-junit-reporter": "latest"
   },
   "scripts": {
     "postinstall": "bower install",

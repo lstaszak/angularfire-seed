@@ -41,7 +41,7 @@
   }]);
   app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.whenAuthenticated('/chat', {
-      templateUrl: 'chat/chat.html',
+      templateUrl: 'app/chat/chat.html',
       controller: 'ChatCtrl'
     });
   }]);

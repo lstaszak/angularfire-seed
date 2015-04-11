@@ -138,7 +138,7 @@
   ]);
   app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.whenAuthenticated('/account', {
-      templateUrl: 'account/account.html',
+      templateUrl: 'app/account/account.html',
       controller: 'AccountCtrl'
     })
   }]);

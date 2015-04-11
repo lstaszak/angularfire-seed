@@ -6,13 +6,22 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "~1.3.8",
-    "angular-route": "~1.3.8",
-    "angular-loader": "~1.3.8",
-    "angular-mocks": "~1.3.8",
-    "html5-boilerplate": "~4.3.0",
-    "firebase": "2.2.2",
-    "angularfire": "~1.0.0",
-    "mockfirebase": "~0.10.3"
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-loader": "latest",
+    "angular-mocks": "latest",
+    "angular-ui-router":"latest",
+    "html5-boilerplate": "latest",
+    "firebase": "latest",
+    "angularfire": "latest",
+    "mockfirebase": "latest",
+    "fastclick": "latest",
+    "waypoints": "latest",
+    "mustache.js": "latest",
+    "jquery.transit": "latest",
+    "jquery-slimscroll": "latest",
+    "moment": "latest",
+    "pace": "latest",
+    "bootstrap-hover-dropdown": "latest"
   }
 }

@@ -75,6 +75,6 @@ app.controller('LoginCtrl', ['$scope', 'Auth', '$location', 'fbutil', '$firebase
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider.when('/login', {
     controller: 'LoginCtrl',
-    templateUrl: 'login/login.html'
+    templateUrl: 'app/login/login.html'
   });
 }]);
